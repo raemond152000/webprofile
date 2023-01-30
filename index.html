@@ -1,0 +1,153 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raemond</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- intro -->
+        <div class="intro">
+            <div class="salute">
+                <div class="saluteTextContainer">
+                    <h1 class="saluteText">Hi</h1>
+                    <h2 class="name">I'm Raemond</h2>
+                    
+                </div>
+                <div class="saluteImgContainer">
+                    <img src="./img/person.png" alt="" class="saluteImg">
+                </div>
+            </div>
+            <div class="nameContainer">
+                <h2 class="job">a Full-Stack Web Developer</h2>
+            </div>
+            <div class="jobTitleContainer dark">
+                <h2 class="jobTitle">and Designer</h2>
+            </div>
+            <div class="jobTitleContainer purple">
+                <h2 class="jobDesc"></h2>
+            </div>
+        </div>
+        <!-- projects -->
+        <div class="projects">
+            <h1 class="projectTitle">Here are some of my projects</h1>
+            <div class="project">
+                <div class="phone">
+                    <img src="./img/laptop.png" alt="">
+                    <div class="laptopScreen">
+                        <img src="./img/pizza.png" alt="" class="phoneApp">
+                    </div>
+                </div>
+                <div class="projectDetail">
+                    <h1 class="projectTitle">One Free Pizza</h1>
+                    <p class="projectDesc">
+                        <br> React, Redux, Sass, Firebase</br>
+                        <br /> 
+                        A simple ecommerce project using React and Redux Library. This project also uses JSX XML extension
+                        and Sass to style the components. I also used Firebase for user registration and authentication. This project 
+                        highlights the used of structured functional components utilizing redux to update data across components while being
+                        independent to parent component or of each other.   
+                    </p>
+                    <button class="projectButton">Learn More</button>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="laptop">
+                    <img src="./img/laptop.png" alt="">
+                    <div class="laptopScreen">
+                        <img src="./img/recipe.png" alt="" class="laptopApp">
+                    </div>
+                </div>
+                <div class="projectDetail">
+                    <h1 class="projectTitle">Recipe App</h1>
+                    <p class="projectDesc">
+                        <br> React, Redux, Axios, Firebase, Git ,JIRA</br>
+                        <br />  
+                        This is a group project for our Application course that aims to produce a full functioning app from start to finish utilizing 
+                        SCRUM agile framework. Our app is a Recipe App that allows users to filter through and add recipe according to their needs.
+                        My role for this project was to add the functionality where a user can bookmarked or saved the recipe to their favourite list, so that
+                        when logged in the list would be retrieved. I've used firestore database to create and authenticate users and add the favourite list field to the users collection. 
+                         We've used git version control and github for git repository. We also used JIRA to keep track of our project 
+                        using Vision boards, Stories and Sprints. Working with a team proves not only to be effecient but fun too. My groupmates were very responsive and
+                        helpful. Everyone was up to their task and made learning more fun.  
+                    </p>
+                    <button class="projectButton">Learn More</button>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="phone">
+                    <img src="./img/phone.png" alt="">
+                    <div class="phoneScreen">
+                        <img src="./img/mobile.png" alt="" class="phoneApp">
+                    </div>
+                </div>
+                <div class="projectDetail">
+                    <h1 class="projectTitle">Vortex</h1>
+                    <p class="projectDesc">
+                        <br> React Native, Matter JS, Sprite Sheet Android Studio, Expo</br>
+                        <br /> 
+                        A "space" game, it's objective is to reach to the mother nucleus avoiding collision with space objects.
+                        I used react native library for this project and matter JS for the physics for this game such as object collision and detection.
+                        I've used spritesheet for the images and animations. It was challenging yet a fun experience for me to learn the library and get the physics right.
+                        Setting up and learning the android studio emulator and the Expo go proves to be challenging as well
+                        yet rewarding when I get to play the game on my phone.
+                        I've gained alot of respect to how the games are made no matter how simple looking it is. 
+        
+     
+                    </p>
+                    <button class="projectButton">Learn More</button>
+                </div>
+            </div>
+        </div>
+        <!-- github -->
+        <div class="github">
+            <h1 class="githubTitle">See my projects in my github repo</h1>
+            <div class="githubChart">
+                <div class="dates">
+                    <span>Jan</span>
+                    <span>Feb</span>
+                    <span>Mar</span>
+                    <span>Apr</span>
+                    <span>May</span>
+                    <span>Jun</span>
+                    <span>Jul</span>
+                    <span>Aug</span>
+                    <span>Sep</span>
+                    <span>Oct</span>
+                    <span>Nov</span>
+                    <span>Dec</span>
+                </div>
+                <div class="boxContainer">
+
+                </div>
+                <div class="githubTitle">ON GITHUB</div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+<script type="text/javascript">
+    $('document').ready(function(){
+        var typed = new Typed('.jobDesc', {
+            strings: ["Let me help you build your empire.", "I mean your website."],
+            typeSpeed: 50,
+            loop: true,
+            loopCount: Infinity,
+            startDelay: 2500,
+        });
+    });
+
+</script>
+
+</html>
