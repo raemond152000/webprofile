@@ -7,6 +7,8 @@
 
 a{
     text-decoration: none;
+   
+    color: #555;
 }
 
 .container{
@@ -208,7 +210,7 @@ a{
 }
 
 .projectButton::after{
-    content: "View Demo";
+    content: "View Code";
     width: 100%;
     height: 100%;
     position: absolute;
