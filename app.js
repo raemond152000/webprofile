@@ -6,9 +6,10 @@ const authorjob = document.querySelector(".job")
 const jobTitleContainers = document.querySelectorAll(".jobTitleContainer")  //because there are two containers 
 const jobTitles = document.querySelectorAll(".jobTitle")  
 const jobDesc = document.querySelector(".jobDesc")  
+const projectsTitle = document.querySelector(".projectsTitle")
 const projectTitle = document.querySelector(".projectTitle")  
 const phones = document.querySelectorAll(".phone")  
-const laptop = document.querySelector(".laptop")  
+const laptop = document.querySelectorAll(".laptop")  
 
 
 
@@ -51,8 +52,9 @@ window.addEventListener("scroll", ()=>{
 /*   job.style.transform = `translateX(calc(0vh - ${offsetY}px))`   //there are two 100vh containers ahead this element  */
   jobTitles[0].style.transform = `translateY(calc(-200vh + ${offsetY}px))`   //there are two 100vh containers ahead this element 
   jobDesc.style.transform = `translateY(calc(-300vh + ${offsetY}px))`   //there are three 100vh containers ahead this element 
-  projectTitle.style.transform = `translateY(calc(400vh - ${offsetY}px))` 
-  /* phones[0].style.transform = `translateX(calc(500vh - ${offsetY}px))` 
-  laptop.style.transform = `translateX(calc(600vh - ${offsetY}px))` 
-  phones[1].style.transform = `translateX(calc(750vh - ${offsetY}px))`  */
+  projectsTitle.style.transform = `translateY(calc(400vh - ${offsetY}px))` 
+  /* projectTitle.style.transform = `translateX(calc(500vh - ${offsetY}px))`  */
+  laptop[0].style.transform = `translateX(calc(500vh - ${offsetY}px))` 
+  laptop[1].style.transform = `translateX(calc(600vh - ${offsetY}px))` 
+  phones[0].style.transform = `translateX(calc(750vh - ${offsetY}px))` 
 })
